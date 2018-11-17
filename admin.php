@@ -73,7 +73,7 @@ if (isset($_GET['delete']) && !empty($_GET['delete']) ) {
 
 
 
-$stmt = $conn->query("SELECT id, product, description, price FROM products");
+$stmt = $conn->query("SELECT id, product, description, price, image FROM products");
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 require 'view/admin.php';

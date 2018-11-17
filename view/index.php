@@ -26,9 +26,8 @@
 			
 
 <?php foreach($products as $product) { ?>
-
-			<div class="card" style="width: 18rem;">
-			<img height="80px" class="card-img-top" src='images/ <?= $product["image"]?>' alt="Card image cap">
+			<div class="card" style="width: 15rem;">
+			<img alt="<?= $product['product'] ?>" height="180" src="<?= $product['image'] ?>">
 				<div class="card-body">
 					<h5 class="card-title"><?= $product['product']?></h5>
 					<p class="card-text"><?= $product['description']?></p>
